@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #331443;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  
+}
+.hidden {
+  display: none;
+}
+
+.name-screen, .gift-screen, .album-screen {
+  text-align: center;
+  animation: zoomIn 0.6s ease-out forwards;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+      border-radius: 8px;
+    font-weight: bold;
+	animation: zoomIn 0.6s ease-out forwards;
+}
+
+.gifts {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.gift {
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gift:hover {
+  transform: scale(1.2);
+}
+
+.message {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 20px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+#nameScreen {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	margin: 0 10px;
+}
+#nameScreen h1 {
+	font-size: 1.5rem;
+}
+#nameScreen input {
+	width: 100%;
+}
+#nameScreen button {
+	background: #331443;
+    color: #fff;
+    border-radius: 20px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+}
+#greeting {
+	color: #fff;
+}
+#FirstGiftBox {
+	text-align: center;
+}
+#FirstGiftBox p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+    font-style: italic;
+}
+.teddy_img {
+	background: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.gift-top-section {
+	border: 2px dashed #fff;
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 10px 0 10px 0;
+    padding: 10px;
+}
+.gift-top-section2 {
+	width: 90%;
+	animation: fadeIn 1s ease-in-out;
+}
+.gift-inner-1 {
+	background: #fff;
+    padding: 15px;
+	 border-radius: 10px 0 10px 0;
+    width: auto;
+	    color: #331443;
+    font-size: 20px;
+    font-weight: bold;
+}
+.gift-inner-1 span {
+	font-size: 14px;
+    background: #331443;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+	cursor: pointer;
+	animation: blink 1s step-start infinite;
+	animation-delay: 2s;
+}
+#gift-top-section2 {
+	animation: fadeIn 1s ease-in-out;
+	animation-delay: 1s;
+}
+
+#GiftbdaySurpriseText {
+	animation: zoomIn 0.6s ease-out forwards;
+}
+.itbdaytext {
+	background: #331443;
+    padding: 5px 0;
+    color: #fff;
+}
+  /* #drag-container, 
+  #spin-container {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateX(-10deg);
+	transform: rotateX(-10deg);
+  }
+
+  #drag-container img,
+  #drag-container video {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 200px;
+	font-size: 50px;
+	text-align: center;
+	-webkit-box-shadow: 0 0 8px #fff;
+	box-shadow: 0 0 8px #fff;
+	-webkit-box-reflect: below 10px
+	  linear-gradient(transparent, transparent, #0005);
+  }
+
+  #drag-container img:hover,
+  #drag-container video:hover {
+	-webkit-box-shadow: 0 0 15px #fffd;
+	box-shadow: 0 0 15px #fffd;
+	-webkit-box-reflect: below 10px
+	  linear-gradient(transparent, transparent, #0007);
+  }
+
+  #drag-container p {
+	font-family: Serif;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotateX(90deg);
+	transform: translate(-50%, -50%) rotateX(90deg);
+	color: #fff;
+	font-size: 30px;
+    text-align: center;
+  }
+
+  #ground {
+	width: 900px;
+	height: 900px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotateX(90deg);
+	transform: translate(-50%, -50%) rotateX(90deg);
+	background: -webkit-radial-gradient(
+	  center center,
+	  farthest-side,
+	  #9993,
+	  transparent
+	);
+  }
+
+  #music-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+
+  @-webkit-keyframes spin {
+	from {
+	  -webkit-transform: rotateY(0deg);
+	  transform: rotateY(0deg);
+	}
+	to {
+	  -webkit-transform: rotateY(360deg);
+	  transform: rotateY(360deg);
+	}
+  }
+
+  @keyframes spin {
+	from {
+	  -webkit-transform: rotateY(0deg);
+	  transform: rotateY(0deg);
+	}
+	to {
+	  -webkit-transform: rotateY(360deg);
+	  transform: rotateY(360deg);
+	}
+  }
+  @-webkit-keyframes spinRevert {
+	from {
+	  -webkit-transform: rotateY(360deg);
+	  transform: rotateY(360deg);
+	}
+	to {
+	  -webkit-transform: rotateY(0deg);
+	  transform: rotateY(0deg);
+	}
+  }
+  @keyframes spinRevert {
+	from {
+	  -webkit-transform: rotateY(360deg);
+	  transform: rotateY(360deg);
+	}
+	to {
+	  -webkit-transform: rotateY(0deg);
+	  transform: rotateY(0deg);
+	}
+  }*/
+  #drag-container.hidden {
+	  display: none;
+  }
+  #nameScreen.hidden {
+	  display: none;
+  }
+  /*.album-screen {
+  -webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  }*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 1. Define the animation */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+	.gift-top-section {
+		width: 80%;
+	}
+	#GiftbdaySurpriseText .gift-inner-1{
+		font-size: 14px;
+	}
+}

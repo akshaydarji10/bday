@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+	<div id="FirstGiftBox">
+		<img class="gift" src="images/gift_box.png" onclick="showGiftFirst()" width="150" height="170"/>
+		<p>Excuse me Hello, Open the gift</p>
+	</div>
+	
+  <div class="name-screen hidden" id="nameScreen">
+    <!-- <h1>🎉 What is Your Beautiful Name ? 🎉</h1> -->
+    <h1>What is Your Beautiful Name ?</h1>
+    <input type="text" id="username" placeholder="Enter Your Name"/>
+    <button onclick="goToGifts()">ok</button>
+  </div>
+
+  <div class="gift-screen hidden" id="giftScreen">
+	<img class="teddy_img" src="images/flower-teddy.gif"/>
+    <h2 id="greeting"></h2>
+	<div class="gift-top-section" id="GiftbdaySurprise1">
+		<div class="gift-inner-1" id="giftText">
+			<p class="typewriter">Hey gorgeous, Today is all about celebrating you.</p>
+			<span onclick="goToNextGift()">&#11166;</span>
+			
+		</div>
+	</div>
+	<div class="gift-top-section hidden" id="GiftbdaySurpriseText">
+		<div class="gift-inner-1" id="giftText">
+			<p class="typewriter">Do you know what makes today extra special?</p>
+			<p class="typewriter itbdaytext">🥳it's your birthday!🥳</p>
+			<p class="typewriter">🎉Today, I wish you a year filled with laughter, love and unforgettable moments🎉</p>
+			<span onclick="goToNextGift2()">&#11166;</span>
+			
+		</div>
+	</div>
+	<div class="gift-top-section gift-top-section2 hidden" id="GiftbdaySurprise2">
+		<div class="gift-inner-1">
+			<div class="">Tap here for your birthday surprise</div>
+			<div class="gifts">
+				<div class="gift" onclick="revealMessage(this, 0)">💖</div>
+				<div class="gift" onclick="revealMessage(this, 1)">🎁</div>
+				<div class="gift" onclick="revealMessage(this, 2)">🎂</div>
+			  
+			</div>
+			<p class="message" id="messageBox"></p>
+		</div>
+	</div>
+    <button class="hidden" id="albumBtn" onclick="showAlbum()">View Gift</button>
+  </div>
+
+  
+	<!--<div class="hidden" id="drag-container">
+      <div id="spin-container">
+        <img src="images/slide_1.jpeg" alt="" />
+        <img src="images/slide_2.jpg" alt="" />
+        <img src="images/slide_3.jpg" alt="" />
+        <img src="images/slide_4.jpg" alt="" />
+        <img src="images/slide_5.jpeg" alt="" />
+        <img src="images/slide_6.jpeg" alt="" />
+
+        <img src="images/slide_7.jpeg" alt="" />
+
+        <p id="bdayInnerText"></p>
+      </div>
+      <div id="ground"></div>
+    </div>-->
+
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
